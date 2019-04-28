@@ -5,10 +5,17 @@
     <title>Questao 13</title>
 </head>
 <body>
-    <div id="interativo">Clique-me!</div>
-    <script></script>
+<div id="interativo">Clique-me!</div>
+<script>
+        var interativo = document.getElementById ("interativo");
+        interativo.addEventListener("click", clique);
+        function clique () {
+        interativo.textContent = "Funcionou!";
+  }
+</script>
 </body>
 </html>
+
 
 
 

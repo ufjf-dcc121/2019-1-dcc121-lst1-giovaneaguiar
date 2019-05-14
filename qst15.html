@@ -40,8 +40,19 @@ var botaoLimpar = document.getElementById("limpar");
 var resultado = document.getElementById("resultado");
 var melhorias = document.getElementById("melhorias");
 var media = document.getElementById("");
+botao.addEventListener("click", botaoLimpar);
 function limparClick() {
- botao.addEventListener("click", botaoLimpar);
+ melhoria.textContent = " ";
+ resultado.textContent = " ";
+}
+botao.addEventListener("click", botaoAvaliar);
+function avaliarClick() {
+ if ( media >=70){
+ resultado.textContent = "Parabéns" + nome.textContent + " ! Você está aprovado com média 70!";
+}
+if ( media < 70){
+    resultado.textConten = "Você está reprovado com média 50!";
+}
 }
 </script>
 </body>
